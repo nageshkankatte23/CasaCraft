@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CasaCraft | Interior Design</title>
+
+
+
+    <link rel="stylesheet" href="./CasaCraft _ Interior Design_files/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+    <nav class="navbar">
+
+         <div class="logo">
+            🏠 Casa<span>Craft</span>
+        </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="http://127.0.0.1:5500/index.html#home">HOME</a>
+                <a href="http://127.0.0.1:5500/index.html#about">ABOUT</a>
+                <a href="http://127.0.0.1:5500/index.html#projects">PROJECTS</a>
+                <a href="http://127.0.0.1:5500/index.html#services">SERVICES</a>
+                <a href="http://127.0.0.1:5500/index.html#contact">CONTACT</a>
+            </div>
+
+        <div class="nav-buttons">
+
+        <button id="darkMode">🌙</button>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+         </div>
+
+    </nav>
+
+    </header>
+
+    <!-- END NAVBAR -->
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+        <p class="subtitle">
+            DESIGN • CREATE • INSPIRE
+        </p>
+
+        <h1>Beautiful Spaces,<span>Beautiful Life.</span></h1>
+
+            <p class="hero-text"> We create elegant, comfortable and functional
+            interiors that reflect your personality.</p>
+
+        <div class="hero-buttons">
+
+            <a href="http://127.0.0.1:5500/index.html#projects" class="primary-btn">
+                Explore Projects
+            </a>
+
+            <a href="http://127.0.0.1:5500/index.html#contact" class="secondary-btn">
+                Let's Talk
+            </a>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- END HERO -->
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+    <div class="about-image">
+
+        <img src="./CasaCraft _ Interior Design_files/about.jpg">
+
+    </div>
+
+    <div class="about-content">
+
+        <p class="subtitle">ABOUT US </p>
+
+        <h2> We Design Spaces<span>That Feel Like Home</span> </h2>
+
+        <p> CasaCraft is an interior design studio focused on creating beautiful and functional spaces. We combine
+        creativity, comfort and modern design to transform ordinary spaces into extraordinary places.</p>
+
+        <button class="primary-btn" onclick="showAbout()">Know More</button>
+
+    </div>
+
+    </section>
+
+    <!-- END ABOUT -->
+
+
+    <!-- STATISTICS -->
+
+    <section class="stats">
+
+    <div class="stat">
+
+        <h2 class="counter" data-target="150">150</h2>
+
+        <p>Projects Completed</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2 class="counter" data-target="95">95</h2>
+
+        <p>Happy Clients</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2 class="counter" data-target="12">12</h2>
+
+        <p>Years Experience</p>
+
+    </div>
+
+    <div class="stat">
+
+         <h2 class="counter" data-target="25">25</h2>
+
+        <p>Design Awards</p>
+
+    </div>
+
+    </section>
+
+    <!-- END STATS -->
+
+
+    <!-- Featured PROJECTS -->
+
+    <section class="projects" id="projects">
+
+    <div class="section-heading">
+
+        <p class="subtitle"> OUR WORK</p>
+
+        <h2> Featured Projects </h2>
+
+        <p> Explore some of our recent interior designs.</p>
+
+    </div>
+
+    <!-- END FEATURED -->
+
+
+    <!-- FILTER BUTTONS -->
+
+     <div class="filters">
+
+        <button class="filter active" data-filter="all"> All</button>
+
+        <button class="filter" data-filter="living">Living Room</button>
+
+        <button class="filter" data-filter="bedroom"> Bedroom</button>
+
+        <button class="filter" data-filter="kitchen"> Kitchen</button>
+
+        <button class="filter" data-filter="office">Office</button>
+
+    </div>
+
+
+    <div class="project-grid">
+
+    <!-- PROJECT 1 -->
+
+    <div class="project-card" data-category="living">
+
+    <div class="project-image">
+
+        <img src="./CasaCraft _ Interior Design_files/living-room.jpg">
+
+        <button class="heart" onclick="favorite(this)">♡</button>
+
+    </div>
+
+    <div class="project-info">
+
+        <p>Living Room</p>
+
+        <h3>Modern Minimal Living</h3>
+
+    <button onclick="viewProject('Modern Minimal Living')">View Project →</button>
+
+    </div>
+
+    </div>
+
+     <!-- END PROJECT 1 -->
+
+
+    <!-- PROJECT 2 -->
+
+    <div class="project-card" data-category="bedroom">
+
+        <div class="project-image">
+
+            <img src="./CasaCraft _ Interior Design_files/luxury-bedroom.jpg">
+
+            <button class="heart" onclick="favorite(this)">♡</button>
+
+        </div>
+
+        <div class="project-info">
+
+            <p>Bedroom</p>
+
+            <h3>Luxury Bedroom</h3>
+
+        <button onclick="viewProject('Luxury Bedroom')"> View Project →</button>
+
+        </div>
+
+        </div>
+
+    <!-- END PROJECT 2 -->
+
+
+    <!-- PROJECT 3 -->
+
+    <div class="project-card" data-category="kitchen">
+
+         <div class="project-image">
+
+             <img src="./CasaCraft _ Interior Design_files/kitchen.jpg">
+
+         <button class="heart" onclick="favorite(this)"> ♡</button>
+
+        </div>
+
+        <div class="project-info">
+
+            <p>Kitchen</p>
+
+            <h3>Contemporary Kitchen</h3>
+
+        <button onclick="viewProject('Contemporary Kitchen')"> View Project →</button>
+
+        </div>
+
+        </div>
+
+
+
+    <!-- END PROJECT 3 -->
+
+
+
+
+    <!-- PROJECT 4 -->
+
+
+
+    <div class="project-card" data-category="office">
+
+        <div class="project-image">
+
+            <img src="./CasaCraft _ Interior Design_files/office.jpg">
+
+        <button class="heart" onclick="favorite(this)"> ♡</button>
+
+        </div>
+
+        <div class="project-info">
+
+             <p>Office</p>
+
+             <h3>Creative Workspace</h3>
+
+         <button onclick="viewProject('Creative Workspace')"> View Project →</button>
+
+        </div>
+
+        </div>
+
+    <!-- END PROJECT 4 -->
+
+
+    <!-- PROJECT 5 -->
+
+    <div class="project-card" data-category="living">
+
+        <div class="project-image">
+
+            <img src="./CasaCraft _ Interior Design_files/natural-living.jpg">
+
+        <button class="heart" onclick="favorite(this)">♡</button>
+
+        </div>
+
+        <div class="project-info">
+
+            <p>Living Room</p>
+
+             <h3>Elegant Natural Space</h3>
+
+        <button onclick="viewProject('Elegant Natural Space')">View Project → </button>
+
+        </div>
+
+        </div>
+
+    <!-- END PROJECT 5 -->
+
+
+    <!-- PROJECT 6 -->
+
+    <div class="project-card" data-category="bedroom">
+
+         <div class="project-image">
+
+            <img src="./CasaCraft _ Interior Design_files/cozy-bedroom.jpg">
+
+        <button class="heart" onclick="favorite(this)">♡</button>
+
+        </div>
+
+
+        <div class="project-info">
+
+             <p>Bedroom</p>
+
+             <h3>Warm &amp; Cozy Bedroom</h3>
+
+        <button onclick="viewProject('Warm &amp; Cozy Bedroom')">View Project →</button>
+
+         </div>
+
+         </div>
+
+        </div>
+
+    </section>
+
+    <!-- END PROJECTS -->
+
+
+    <!-- SERVICES -->
+
+    <section class="services" id="services">
+
+        <div class="section-heading">
+
+            <p class="subtitle">
+                WHAT WE DO
+            </p>
+
+            <h2>
+                Our Services
+            </h2>
+
+        </div>
+
+
+        <div class="service-grid">
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🏠
+                </div>
+
+                <h3>Home Interior</h3>
+
+                <p>
+                    Complete interior design solutions for
+                    beautiful and comfortable homes.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🏢
+                </div>
+
+                <h3>Office Design</h3>
+
+                <p>
+                    Modern workspaces designed for creativity
+                    and productivity.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🎨
+                </div>
+
+                <h3>Custom Design</h3>
+
+                <p>
+                    Personalized designs created according
+                    to your style and requirements.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    💡
+                </div>
+
+                <h3>Lighting Design</h3>
+
+                <p>
+                    Beautiful lighting concepts that enhance
+                    the atmosphere of your space.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- END SERVICES -->
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <div class="contact-content">
+
+            <div>
+
+                <p class="subtitle">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Let's Create Your
+                    Dream Space.
+                </h2>
+
+                <p>
+                    Tell us about your project and our design
+                    team will get back to you.
+                </p>
+
+            </div>
+
+
+            <form id="contactForm">
+
+                <input type="text" id="name" placeholder="Your Name" required="">
+
+                <input type="email" id="email" placeholder="Your Email" required="">
+
+                <select id="service" required="">
+
+                    <option value="">
+                        Select Service
+                    </option>
+
+                    <option>
+                        Home Interior
+                    </option>
+
+                    <option>
+                        Office Design
+                    </option>
+
+                    <option>
+                        Custom Design
+                    </option>
+
+                    <option>
+                        Lighting Design
+                    </option>
+
+                </select>
+
+                <textarea id="message" placeholder="Tell us about your project" required=""></textarea>
+
+                <button class="primary-btn" type="submit">
+                    Send Inquiry
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- END CONTACT -->
+
+
+    <!-- PROJECT MODAL -->
+
+    <div class="modal" id="projectModal">
+
+        <div class="modal-content">
+
+            <button class="close" onclick="closeModal()">
+                ×
+            </button>
+
+            <p class="subtitle">
+                PROJECT DETAILS
+            </p>
+
+            <h2 id="projectTitle">
+                Project
+            </h2>
+
+            <p>
+                This project combines modern aesthetics,
+                comfortable furniture, thoughtful lighting
+                and functional space planning to create a
+                beautiful interior.
+            </p>
+
+            <button class="primary-btn" onclick="contactFromProject()">
+                Start Similar Project
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- END PROJECT MODAL -->
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="logo">
+            Casa<span>Craft</span>
+        </div>
+
+        <p>
+            Designing beautiful spaces for beautiful lives.
+        </p>
+
+        <p class="copyright">
+            ©️ 2026 CasaCraft. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="./CasaCraft _ Interior Design_files/1.js.download"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
