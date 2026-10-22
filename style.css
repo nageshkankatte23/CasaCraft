@@ -1,0 +1,666 @@
+/* BASIC */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+    color: black;
+
+}
+
+
+/* HEADER */
+
+header {
+    background: white;
+    box-shadow: 0 2px 10px lightgray;
+    position: sticky;
+
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    max-width: 1200px;
+    height: 75px;
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+
+/* LOGO */
+
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.logo span {
+    color: saddlebrown;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+    
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: saddlebrown;
+}
+
+
+/* NAV BUTTONS */
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.nav-buttons button {
+    padding: 10px;
+    border: none;
+    background: white;
+    font-size: 20px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+
+    background: url("hero.jpg") center/cover;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.subtitle {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: saddlebrown;
+}
+
+.hero-text {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+
+/* BUTTONS */
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.primary-btn {
+    background: saddlebrown;
+    color: white;
+    border: none;
+}
+
+.primary-btn:hover {
+    background: sienna;
+}
+
+.secondary-btn {
+    color: white;
+    border: 1px solid white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: black;
+}
+
+
+/* ABOUT */
+
+.about {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.about h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.about h2 span {
+    color: saddlebrown;
+}
+
+.about-content p:not(.subtitle) {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* STATISTICS */
+
+.stats {
+    background: black;
+    color: white;
+
+    padding: 45px 8%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    text-align: center;
+    gap: 20px;
+}
+
+.stat h2 {
+    color: burlywood;
+    font-size: 38px;
+}
+
+.stat p {
+    margin-top: 10px;
+    color: white;
+}
+
+
+/* FEATURED PROJECTS */
+
+.projects {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+    background: white;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    margin: 15px 0;
+    color: darkslategray;
+}
+
+.section-heading p {
+    color: gray;
+}
+
+
+/* FILTERS */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.filter {
+    padding: 10px 20px;
+    border: 1px solid saddlebrown;
+    border-radius: 25px;
+    background: white;
+    color: black;
+}
+
+.filter:hover,
+.filter.active {
+    background: saddlebrown;
+    color: white;
+}
+
+
+/* PROJECT GRID */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* PROJECT CARD */
+
+.project-card {
+    background: white;
+    box-shadow: 0 5px 15px lightgray;
+    border-radius: 10px;
+}
+
+
+/* PROJECT IMAGE */
+
+.project-image {
+    height: 250px;
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* HEART */
+
+.heart {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    background: white;
+    border: none;
+    border-radius: 50%;
+
+    width: 45px;
+    height: 45px;
+
+    font-size: 22px;
+    color: red;
+}
+
+.heart.active {
+    color: red;
+}
+
+
+/* PROJECT INFO */
+
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info p {
+    color: saddlebrown;
+    margin-bottom: 10px;
+}
+
+.project-info h3 {
+    color: darkslategray;
+    margin-bottom: 15px;
+}
+
+.project-info button {
+    color: saddlebrown;
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+
+
+/* SERVICES */
+
+.services {
+    padding: 80px 20px;
+    background: white;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px lightgray;
+    border-radius: 10px;
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: darkslategray;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: gray;
+    line-height: 1.6;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background: black;
+    color: white;
+    padding: 80px 8%;
+}
+
+.contact-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+    align-items: center;
+}
+
+
+/* CONTACT TEXT */
+
+.contact .subtitle {
+    color: burlywood;
+}
+
+.contact h2 {
+    font-size: 38px;
+    margin: 15px 0;
+    color: white;
+}
+
+.contact-content p {
+    line-height: 1.7;
+    color: lightgray;
+}
+
+
+/* CONTACT FORM */
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+    width: 100%;
+    padding: 13px;
+
+    background: black;
+    color: white;
+
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.contact textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact button {
+    background: saddlebrown;
+    color: white;
+    border: none;
+    padding: 13px;
+    font-size: 16px;
+}
+
+
+/* MODAL */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    
+
+    background: black;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 35px;
+
+    background: white;
+    color: darkslategray;
+
+    border-radius: 8px;
+}
+
+.modal-content h2 {
+    margin: 15px 0;
+}
+
+.modal-content p:not(.subtitle) {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    background: saddlebrown;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+}
+
+.close {
+    border: none;
+    background: none;
+
+    font-size: 28px;
+    color: red;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: darkgray;
+    color: white;
+
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer .logo {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer .logo span {
+    color: saddlebrown;
+}
+
+footer p {
+    margin-top: 12px;
+    color: white;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+
+/* DARK MODE */
+
+body.dark {
+    background: black;
+    color: white;
+}
+
+body.dark header {
+    background: black;
+}
+
+body.dark .logo {
+    color: white;
+}
+
+body.dark .nav-links a {
+    color: white;
+}
+
+body.dark .nav-buttons button {
+    background: black;
+    color: white;
+}
+
+body.dark .project-card,
+body.dark .service-card {
+    background: darkslategray;
+    color: white;
+}
+
+body.dark .projects,
+body.dark .services {
+    background: black;
+}
+
+body.dark .section-heading h2 {
+    color: white;
+}
+
+body.dark .modal-content {
+    background: darkslategray;
+    color: white;
+}
+
+
+/* TABLET */
+
+@media (max-width: 950px) {
+    .hero h1 { font-size: 45px; }
+    .project-grid,
+    .service-grid,
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar { height: 65px; }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .nav-links.show { display: flex; }
+    .menu-btn { display: inline-block; }
+
+    .hero {
+        min-height: 500px;
+        padding: 50px 25px;
+    }
+
+    .hero h1 { font-size: 38px; }
+
+    .about,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image img { height: 300px; }
+
+    .about h2,
+    .contact h2 {
+        font-size: 32px;
+    }
+
+    .project-grid,
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats { padding: 35px 15px; }
+}
